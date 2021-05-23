@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/bg">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_3d"
+            android:textSize="24sp"
+            android:text="@string/gmi_keyboard_backspace"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <FrameLayout
+            android:id="@+id/helpContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_white_rounded_12"
+            android:layout_marginEnd="16dp"
+            android:padding="10dp">
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:id="@+id/helpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_new_0E3"
+            android:textSize="18sp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/gmi_headset_mic"
+            />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/welcome"
+        android:textColor="@color/black_3d"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textFontWeight="600"
+        android:textSize="24sp"
+        android:layout_marginTop="22dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray_6e"
+        android:textFontWeight="400"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:text="@string/registration_subtitle"/>
+
+    <TextView
+        android:id="@+id/inputTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subTitle"
+        android:layout_marginTop="40dp"
+        android:text="@string/number_of_account_number"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/gray_97"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textFontWeight="400"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_goneMarginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputTitle"
+        android:layout_marginStart="25dp"
+        android:backgroundTint="@color/gray_F2"
+        android:textColorHint="@color/gray_97"
+        android:textCursorDrawable="@color/gray_F2"
+        android:maxLength="12"
+        android:hint="@string/number_of_account_number"/>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="20dp"
+        style="@style/NewDesign.Button.Blue"
+        android:paddingVertical="18dp"
+        android:text="@string/continue_"
+        android:layout_marginBottom="30dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

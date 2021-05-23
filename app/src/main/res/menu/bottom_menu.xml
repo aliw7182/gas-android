@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/welcome"
+        android:iconTint="@color/blue"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/check"
+        android:icon="@drawable/ic_check"
+        android:title="@string/welcome"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/scan"
+        android:icon="@drawable/qr_scan"
+        android:title="@string/welcome"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>
